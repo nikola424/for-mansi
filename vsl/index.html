@@ -14,7 +14,28 @@
   <link rel="stylesheet" href="lt.css" />
 <script data-topfix>try{if("scrollRestoration" in history)history.scrollRestoration="manual"}catch(e){}addEventListener("load",function(){if(!location.hash){scrollTo(0,0);setTimeout(function(){scrollTo(0,0)},50)}});</script>
 <style>.lt-oncall{max-width:760px;margin:clamp(56px,9vh,96px) auto 0;padding:0 max(16px,env(safe-area-inset-left,0px))}.lt-oncall .lt-steps h3{color:var(--ink)}</style>
-<style>.lt-h1{font-family:var(--display);letter-spacing:-.01em}.lt-h2{font-family:var(--display)}.lt-sub{max-width:62ch;margin:14px auto 0}@media (min-width:1000px){.lt-cases__row{justify-content:center}}</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap">
+<style>
+/* Mansi's own brand, read off founderx.ae: deep green, cream, gold; Roboto; gold letter-spaced eyebrows */
+:root{--bg:#033021;--surface:#0d442a;--ink:#fcf9d9;--muted:#cfd8c9;--hair:rgba(252,249,217,.14);--hair-soft:rgba(252,249,217,.07);--accent:#d8b05c;--accent-text:#d8b05c;--accent-ink:#033021;--accent-soft:rgba(216,176,92,.16);--sans:"Roboto",Arial,sans-serif;--display:"Roboto",Arial,sans-serif}
+body{background:#033021;color:#fcf9d9;font-family:"Roboto",Arial,sans-serif}
+.lt-h1,.lt-h2{color:#fcf9d9}
+.lt-kicker,.lt-pill{font-family:"Roboto",Arial,sans-serif;font-weight:700;letter-spacing:2px;color:#c9a86a}
+.lt-steps h3{color:#fcf9d9}
+.lt-press,.lt-reviews{max-width:1000px;margin:clamp(56px,9vh,96px) auto 0}
+.press{display:grid;gap:10px;max-width:720px;margin:22px auto 0;padding:28px 30px;border:1px solid var(--hair);border-radius:18px;background:linear-gradient(160deg,#0d442a,#06301f);text-decoration:none;color:#fcf9d9;text-align:left}
+.press__logo{font:900 1.5rem/1 "Roboto",Arial,sans-serif;letter-spacing:.14em;color:#fcf9d9}
+.press__meta{font:700 .78rem/1 "Roboto",Arial,sans-serif;letter-spacing:2px;text-transform:uppercase;color:#c9a86a}
+.press__title{font:700 1.35rem/1.25 "Roboto",Arial,sans-serif}
+.press__text{color:#cfd8c9;line-height:1.55}
+.press__link{color:#d8b05c;font-weight:700}
+.rv__grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:26px;text-align:left}
+.rv{margin:0;padding:22px 22px 20px;border-radius:16px;background:#0d442a;border:1px solid var(--hair);display:grid;gap:12px}
+.rv__stars{color:#d8b05c;letter-spacing:3px}
+.rv blockquote{margin:0;color:#fcf9d9;line-height:1.6;font-size:.98rem}
+.rv figcaption{color:#c9a86a;font-size:.88rem}.rv figcaption b{color:#fcf9d9}
+@media (max-width:700px){.rv__grid{grid-template-columns:1fr}}
+.lt-h1{letter-spacing:-.02em}.lt-h2{letter-spacing:-.01em}.lt-sub{max-width:62ch;margin:14px auto 0}@media (min-width:1000px){.lt-cases__row{justify-content:center}}</style>
 </head>
 <body>
   <!-- ONE page: eyebrow, headline, VSL, CTA, on this call, numbers, results, more wins, FAQ, application. -->
@@ -68,17 +89,28 @@
       </div>
     </section>
 
-    <section class="lt-cases">
+    <section class="lt-press">
+      <p class="lt-kicker"><i></i>As featured in</p>
+      <a class="press" href="https://gulfbusiness.com/en/2025/women-in-business/interview-with-founderx-ceo-mansi-panchal/" target="_blank" rel="noopener">
+        <span class="press__logo">GULF BUSINESS</span>
+        <span class="press__meta">Women in Business &middot; April 2025</span>
+        <span class="press__title">Interview with FounderX CEO Mansi Panchal</span>
+        <span class="press__text">My story, and why I want to fill the gap in the GCC&rsquo;s business set-up industry and in sales training.</span>
+        <span class="press__link">Read the interview &rarr;</span>
+      </a>
+    </section>
+
+    <section class="lt-reviews">
       <p class="lt-kicker"><i></i>Real results</p>
-      <h2 class="lt-h2">From sales executive <em>to CEO.</em></h2>
-      <p class="lt-sub">I started as a business set-up advisor in 2019, became the one who closed the biggest clients, and built FounderX in Business Bay.</p>
-      <div class="lt-cases__row"><article class="lt-case"><div class="lt-case__img"><img src="../assets/img/proof/p4.jpg" alt="Mansi Panchal" loading="lazy" /></div><h3>CEO of FounderX</h3><p>Company formation in Business Bay, Dubai</p></article><article class="lt-case"><div class="lt-case__img"><img src="../assets/img/proof/p1.jpg" alt="Mansi Panchal" loading="lazy" /></div><h3>3M plays</h3><p>My G-Wagon Reel</p></article><article class="lt-case"><div class="lt-case__img"><img src="../assets/img/proof/p6.jpg" alt="Mansi Panchal" loading="lazy" /></div><h3>109K followers</h3><p>Who come to me for sales advice</p></article></div>
+      <h2 class="lt-h2">The team I train, <em>in our clients&rsquo; words.</em></h2>
+      <p class="lt-sub">Thiri, Manraj, Hussain and Francis are on my FounderX team. This is how our clients talk about them.</p>
+      <div class="rv__grid"><figure class="rv"><div class="rv__stars" aria-label="5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><blockquote>&ldquo;Absolute 5 star service from the team at FounderX! Setting up a corporate entity and handling residency paperwork can be a massive headache, but Manraj and Hussain made the entire process incredibly smooth.&rdquo;</blockquote><figcaption><b>Shresht Prakash</b> &middot; August 2026</figcaption></figure><figure class="rv"><div class="rv__stars" aria-label="5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><blockquote>&ldquo;Very supportive, knowledgeable and responsive. Thiri was personally handling everything for my set-up and she was very active with follow-ups and getting processes done on time!&rdquo;</blockquote><figcaption><b>Mike Mtt</b> &middot; July 2026</figcaption></figure><figure class="rv"><div class="rv__stars" aria-label="5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><blockquote>&ldquo;FounderX were brilliant from start to finish. Francis and his team handled my Dubai business setup, residency visa, and bank account application with complete professionalism and efficiency.&rdquo;</blockquote><figcaption><b>Jonathan Allen</b> &middot; March 2026</figcaption></figure><figure class="rv"><div class="rv__stars" aria-label="5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><blockquote>&ldquo;I got my Dubai business visa set up in under 2 weeks with no hassle and a seamless experience. Lovely collaboration with Manraj and Francis! Wonderful people. Highly, highly recommend.&rdquo;</blockquote><figcaption><b>Manthan Patel</b> &middot; January 2026</figcaption></figure></div>
     </section>
 
     <section class="lt-wins">
       <p class="lt-kicker"><i></i>Want to see more?</p>
       <h2 class="lt-h2">A day in <em>my world.</em></h2>
-      <div class="lt-wins__grid"><figure class="lt-win"><img src="../assets/img/proof/p2.jpg" alt="Mansi Panchal" loading="lazy" /></figure><figure class="lt-win"><img src="../assets/img/proof/p3.jpg" alt="Mansi Panchal" loading="lazy" /></figure><figure class="lt-win"><img src="../assets/img/proof/p5.jpg" alt="Mansi Panchal" loading="lazy" /></figure><figure class="lt-win"><img src="../assets/img/proof/p7.jpg" alt="Mansi Panchal" loading="lazy" /></figure><figure class="lt-win"><img src="../assets/img/proof/p8.jpg" alt="Mansi Panchal" loading="lazy" /></figure></div>
+      <div class="lt-wins__grid"><figure class="lt-win"><img src="../assets/img/proof/p4.jpg" alt="Mansi Panchal" loading="lazy" /></figure><figure class="lt-win"><img src="../assets/img/proof/p1.jpg" alt="Mansi Panchal" loading="lazy" /></figure><figure class="lt-win"><img src="../assets/img/proof/p6.jpg" alt="Mansi Panchal" loading="lazy" /></figure></div>
     </section>
 
     <section class="st6__faq lt-faq">
