@@ -10,7 +10,7 @@
   <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,500;9..40,600;9..40,700;9..40,800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
 
   <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com/3.4.17"></script>
@@ -29,7 +29,7 @@
   
     *,*::before,*::after{box-sizing:border-box}
     html{overflow-x:clip;overscroll-behavior:none}
-    body{font-family:'Inter',system-ui,sans-serif;-webkit-font-smoothing:antialiased;background:#fff}
+    body{font-family:'Roboto',system-ui,sans-serif;-webkit-font-smoothing:antialiased;background:#fff}
     .rv{opacity:0;transform:translateY(18px);transition:opacity .65s cubic-bezier(.16,1,.3,1),transform .65s cubic-bezier(.16,1,.3,1)}
     .rv.in{opacity:1;transform:none}
     .d1{transition-delay:.1s}.d2{transition-delay:.2s}.d3{transition-delay:.3s}
@@ -37,7 +37,7 @@
     .h1{animation:up .7s cubic-bezier(.16,1,.3,1) .05s both}
     .h2{animation:up .7s cubic-bezier(.16,1,.3,1) .18s both}
     .h3{animation:up .7s cubic-bezier(.16,1,.3,1) .3s both}
-    .btn{display:inline-flex;align-items:center;gap:8px;font-weight:700;text-decoration:none;border-radius:4px;border:none;cursor:pointer;white-space:nowrap;font-family:'Inter',sans-serif;transition:transform .2s ease,box-shadow .2s ease,background .15s ease}
+    .btn{display:inline-flex;align-items:center;gap:8px;font-weight:700;text-decoration:none;border-radius:4px;border:none;cursor:pointer;white-space:nowrap;font-family:'Roboto',sans-serif;transition:transform .2s ease,box-shadow .2s ease,background .15s ease}
     .btn:hover{transform:translateY(-1px)}
     .btn:active{transform:scale(.98)}
     @keyframes goldGlow{0%,100%{box-shadow:0 4px 18px -4px rgba(196,30,51,.4)}50%{box-shadow:0 4px 26px -2px rgba(196,30,51,.65),0 0 10px rgba(196,30,51,.18)}}
@@ -51,7 +51,7 @@
     .btn-sm{padding:.75rem 1.5rem !important;font-size:.9375rem !important}
     @media(max-width:767px){.btn-gold,.btn-dark{font-size:.9375rem;padding:.875rem 1.375rem}.text-center .btn-dark,.text-center .btn-gold{display:flex;margin-left:auto;margin-right:auto;width:fit-content;max-width:calc(100vw - 2.5rem)}}
     .ey{font-size:.8rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:#c41e33}
-    .tcard{position:relative;overflow:hidden;cursor:pointer;border-radius:12px;border:1px solid rgba(0,0,0,.1);min-height:210px;background:#070606;display:flex;flex-direction:column;justify-content:flex-end;text-align:left;width:100%;padding:0;transition:border-color .25s,transform .25s cubic-bezier(.16,1,.3,1),box-shadow .25s;font-family:'Inter',sans-serif}
+    .tcard{position:relative;overflow:hidden;cursor:pointer;border-radius:12px;border:1px solid rgba(0,0,0,.1);min-height:210px;background:#070606;display:flex;flex-direction:column;justify-content:flex-end;text-align:left;width:100%;padding:0;transition:border-color .25s,transform .25s cubic-bezier(.16,1,.3,1),box-shadow .25s;font-family:'Roboto',sans-serif}
     .tcard:hover{border-color:rgba(196,30,51,.45);transform:translateY(-3px);box-shadow:0 16px 48px -12px rgba(0,0,0,.35)}
     .tcard:active{transform:scale(.98)}
     .tcard-scrim{position:absolute;inset:0;z-index:1;background:linear-gradient(to top,rgba(0,0,0,.92) 0%,rgba(0,0,0,.55) 55%,rgba(0,0,0,.2) 100%)}
@@ -87,10 +87,10 @@
     .apply-overlay.cal-mode{align-items:flex-start;padding-top:24px;padding-bottom:24px}
     .apply-modal{width:100%;max-width:640px;max-height:96vh;border-radius:20px;background:#1a1515;position:relative;margin:auto;overflow-y:auto;min-height:0;-webkit-overflow-scrolling:touch;overscroll-behavior:contain}
     .apply-modal.cal-mode{max-width:900px;max-height:none;overflow-y:visible}
-    .qtile{border:2px solid #6f645c;border-radius:12px;padding:1.375rem 1.25rem;font-size:1rem;font-weight:600;line-height:1.45;cursor:pointer;background:#221c1c;color:#f4ede4;transition:border-color .15s,background .15s,color .15s;font-family:'Inter',sans-serif;text-align:left;width:100%;box-sizing:border-box}
+    .qtile{border:2px solid #6f645c;border-radius:12px;padding:1.375rem 1.25rem;font-size:1rem;font-weight:600;line-height:1.45;cursor:pointer;background:#221c1c;color:#f4ede4;transition:border-color .15s,background .15s,color .15s;font-family:'Roboto',sans-serif;text-align:left;width:100%;box-sizing:border-box}
     .qtile-con{padding:1rem;font-size:.9375rem;line-height:1.4;border-radius:10px}
     @media(max-width:767px){.apply-modal>div{padding:1.125rem 1rem .875rem !important}.qtile-con{padding:.5625rem .6875rem;font-size:1rem;line-height:1.35;border-radius:9px}.con-grid{gap:.5rem !important}.apply-modal h3{font-size:1.0625rem !important;margin-bottom:.8125rem !important}}
-    .cal-slot{padding:.6875rem .25rem;border-radius:8px;font-size:.8125rem;font-weight:600;cursor:pointer;transition:background .12s,border-color .12s,color .12s;font-family:'Inter',sans-serif;text-align:center;min-height:44px;line-height:1.25;border:1.5px solid #2e2626;background:#1a1515;color:#f4ede4;touch-action:manipulation;-webkit-tap-highlight-color:transparent;}
+    .cal-slot{padding:.6875rem .25rem;border-radius:8px;font-size:.8125rem;font-weight:600;cursor:pointer;transition:background .12s,border-color .12s,color .12s;font-family:'Roboto',sans-serif;text-align:center;min-height:44px;line-height:1.25;border:1.5px solid #2e2626;background:#1a1515;color:#f4ede4;touch-action:manipulation;-webkit-tap-highlight-color:transparent;}
     .cal-slot:hover:not(:disabled){background:#2a1418;border-color:#c41e33;color:#f4ede4;}
     .cal-slot:active:not(:disabled){background:#c41e33;border-color:#c41e33;color:#fff;transform:scale(.97);}
     .cal-slot:disabled{cursor:default;opacity:.6;}
@@ -122,7 +122,7 @@
       padding-bottom:.875rem;
       padding-right:1rem;
       font-size:1rem;
-      font-family:'Inter',sans-serif;
+      font-family:'Roboto',sans-serif;
       color:#f4ede4;
       background:#1a1515;
       outline:none;
@@ -147,7 +147,7 @@
     .iti__selected-dial-code{
       font-size:.875rem;
       font-weight:600;
-      font-family:'Inter',sans-serif;
+      font-family:'Roboto',sans-serif;
       color:#f4ede4;
       margin-left:6px !important;
     }
@@ -173,9 +173,9 @@
       -webkit-appearance:none;
       appearance:none;
     }
-    .form-next{font-size:.9375rem;font-weight:800;color:#f4ede4;background:none;border:none;cursor:pointer;font-family:'Inter',sans-serif;display:inline-flex;align-items:center;gap:6px;transition:opacity .15s;padding:0;line-height:1.4}
+    .form-next{font-size:.9375rem;font-weight:800;color:#f4ede4;background:none;border:none;cursor:pointer;font-family:'Roboto',sans-serif;display:inline-flex;align-items:center;gap:6px;transition:opacity .15s;padding:0;line-height:1.4}
     .form-next:disabled{opacity:.3;cursor:not-allowed}
-    .form-input{width:100%;border:2px solid #6f645c;border-radius:8px;padding:.875rem 1rem;font-size:1rem;font-family:'Inter',sans-serif;color:#f4ede4;background:#1a1515;outline:none;transition:border-color .2s;box-sizing:border-box}
+    .form-input{width:100%;border:2px solid #6f645c;border-radius:8px;padding:.875rem 1rem;font-size:1rem;font-family:'Roboto',sans-serif;color:#f4ede4;background:#1a1515;outline:none;transition:border-color .2s;box-sizing:border-box}
     .form-input:focus{border-color:#c41e33}
     .form-input.input-error{border-color:#E53E3E}
     .slack-grid{columns:2;column-gap:6px}
@@ -206,7 +206,7 @@
       font-size:.875rem;
       font-weight:600;
       color:#9d9086;
-      font-family:'Inter',sans-serif;
+      font-family:'Roboto',sans-serif;
       padding:0;
       line-height:1;
     }
@@ -252,7 +252,7 @@
       .hero-h1{font-size:1.32rem !important}
     }
     [x-cloak]{display:none !important}
-    .cs-card::after{content:'See the screenshot \2192';display:block;font-size:.6875rem;font-weight:700;color:rgba(196,30,51,.5);margin-top:.875rem;letter-spacing:.03em;font-family:'Inter',sans-serif;transition:color .2s}
+    .cs-card::after{content:'See the screenshot \2192';display:block;font-size:.6875rem;font-weight:700;color:rgba(196,30,51,.5);margin-top:.875rem;letter-spacing:.03em;font-family:'Roboto',sans-serif;transition:color .2s}
     .cs-card:hover::after{color:#c41e33}
     .mob-br{display:none}
     @media(max-width:767px){.mob-br{display:block}}
@@ -272,9 +272,8 @@
     .cs-grid{display:grid;grid-template-columns:1fr;gap:1rem}
     @media(min-width:640px){.cs-grid{grid-template-columns:repeat(2,1fr)}}
     @media(min-width:1024px){.cs-grid{grid-template-columns:repeat(4,1fr)}}
-  @font-face{font-family:"SF Pro Display Bold";src:url("https://framerusercontent.com/assets/e2xSj9IcJ8dsIvELAZDx3LfWno.woff2");font-display:swap;font-weight:700}
     html,body{background:#0d0b0b;color:#f4ede4}
-    h1,h2,h3,.proof-num{font-family:"SF Pro Display Bold","Inter",-apple-system,sans-serif!important;font-weight:700!important}
+    h1,h2,h3,.proof-num{font-family:"DM Sans",-apple-system,sans-serif!important;font-weight:700!important}
     [class*=cs-card]::after,.cs-card::after{content:none!important;display:none!important}
     .form-input{background:#221c1c!important;color:#f4ede4!important;border-color:#2e2626!important}
   </style>
@@ -289,7 +288,7 @@
 }" x-init="$watch('img',v=>{document.body.style.overflow=v?'hidden':''})" @keydown.escape.window="if(img){img=null}else if(applyOpen){applyOpen=false}">
 
 <style>
-  .nq-cap{font-family:"SF Pro Display Bold","Inter",-apple-system,sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:-.01em;line-height:1.02;color:#f4ede4;margin:0}
+  .nq-cap{font-family:"DM Sans",-apple-system,sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:-.01em;line-height:1.02;color:#f4ede4;margin:0}
   .nq-acc{color:#ee5466;text-shadow:0 0 28px rgba(224,74,92,.45)}
   .nq-ey{font-size:.72rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:#ee5466;margin:0 0 .75rem}
   .nq-sec{padding:4.5rem 1.25rem;border-top:1px solid #2e2626}
@@ -302,13 +301,13 @@
   .nq-new{background:#221c1c;border:1px solid rgba(224,74,92,.45);color:#f4ede4;font-weight:600}
   .nq-lab{display:block;font-size:.62rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;margin-bottom:.35rem}
   .nq-old .nq-lab{color:#7d7068}.nq-new .nq-lab{color:#ee5466}
-  .nq-stat{font-family:"SF Pro Display Bold","Inter",sans-serif;font-size:clamp(2.6rem,9vw,3.6rem);line-height:1;color:#f4ede4;letter-spacing:-.03em;margin:0 0 .5rem}
+  .nq-stat{font-family:"DM Sans",sans-serif;font-size:clamp(2.6rem,9vw,3.6rem);line-height:1;color:#f4ede4;letter-spacing:-.03em;margin:0 0 .5rem}
   .nq-statl{font-size:.75rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#ee5466;margin:0 0 .875rem}
   .nq-p{font-size:.9375rem;color:#cbbfb3;line-height:1.6;margin:0}
   .nq-feat{display:flex;gap:1rem;align-items:flex-start}
   .nq-ic{flex-shrink:0;width:40px;height:40px;border-radius:10px;background:#2a1418;border:1px solid rgba(196,30,51,.4);display:flex;align-items:center;justify-content:center}
   .nq-ft{font-size:1.0625rem;font-weight:700;color:#f4ede4;margin:0 0 .3rem}
-  .nq-num{font-family:"SF Pro Display Bold","Inter",sans-serif;font-size:2.25rem;line-height:1;color:#ee5466;margin:0 0 .625rem}
+  .nq-num{font-family:"DM Sans",sans-serif;font-size:2.25rem;line-height:1;color:#ee5466;margin:0 0 .625rem}
   .nq-ladder{display:grid;grid-template-columns:1fr 1fr;gap:.875rem}
   .nq-micro{font-size:.75rem;color:#9d9086;margin:.75rem 0 0}
   @media(max-width:640px){.nq-row{grid-template-columns:1fr;gap:.5rem;margin-bottom:1.125rem}.nq-ladder{grid-template-columns:1fr}.nq-sec{padding:3.5rem 1rem}}
@@ -492,7 +491,7 @@
     <div style="display:flex;flex-direction:column;gap:.75rem;margin-bottom:3rem;">
 
       <div class="rv" x-data="{o:false}" style="border:1px solid #2e2626;border-radius:12px;overflow:hidden;">
-        <button @click="o=!o" style="width:100%;display:flex;align-items:center;justify-content:space-between;padding:1.25rem 1.5rem;background:none;border:none;cursor:pointer;font-family:'Inter',sans-serif;font-size:1rem;font-weight:700;color:#f4ede4;text-align:left;gap:1rem;">
+        <button @click="o=!o" style="width:100%;display:flex;align-items:center;justify-content:space-between;padding:1.25rem 1.5rem;background:none;border:none;cursor:pointer;font-family:'Roboto',sans-serif;font-size:1rem;font-weight:700;color:#f4ede4;text-align:left;gap:1rem;">
           Does this work for what I sell?
           <span style="flex-shrink:0;font-size:1.25rem;color:#c41e33;" x-text="o?'×':'+'"></span>
         </button>
@@ -501,7 +500,7 @@
         </div>
       </div>
       <div class="rv d1" x-data="{o:false}" style="border:1px solid #2e2626;border-radius:12px;overflow:hidden;">
-        <button @click="o=!o" style="width:100%;display:flex;align-items:center;justify-content:space-between;padding:1.25rem 1.5rem;background:none;border:none;cursor:pointer;font-family:'Inter',sans-serif;font-size:1rem;font-weight:700;color:#f4ede4;text-align:left;gap:1rem;">
+        <button @click="o=!o" style="width:100%;display:flex;align-items:center;justify-content:space-between;padding:1.25rem 1.5rem;background:none;border:none;cursor:pointer;font-family:'Roboto',sans-serif;font-size:1rem;font-weight:700;color:#f4ede4;text-align:left;gap:1rem;">
           I&rsquo;m new to sales. Is this for me?
           <span style="flex-shrink:0;font-size:1.25rem;color:#c41e33;" x-text="o?'×':'+'"></span>
         </button>
@@ -510,7 +509,7 @@
         </div>
       </div>
       <div class="rv d1" x-data="{o:false}" style="border:1px solid #2e2626;border-radius:12px;overflow:hidden;">
-        <button @click="o=!o" style="width:100%;display:flex;align-items:center;justify-content:space-between;padding:1.25rem 1.5rem;background:none;border:none;cursor:pointer;font-family:'Inter',sans-serif;font-size:1rem;font-weight:700;color:#f4ede4;text-align:left;gap:1rem;">
+        <button @click="o=!o" style="width:100%;display:flex;align-items:center;justify-content:space-between;padding:1.25rem 1.5rem;background:none;border:none;cursor:pointer;font-family:'Roboto',sans-serif;font-size:1rem;font-weight:700;color:#f4ede4;text-align:left;gap:1rem;">
           Do I have to lower my prices?
           <span style="flex-shrink:0;font-size:1.25rem;color:#c41e33;" x-text="o?'×':'+'"></span>
         </button>
@@ -519,7 +518,7 @@
         </div>
       </div>
       <div class="rv d2" x-data="{o:false}" style="border:1px solid #2e2626;border-radius:12px;overflow:hidden;">
-        <button @click="o=!o" style="width:100%;display:flex;align-items:center;justify-content:space-between;padding:1.25rem 1.5rem;background:none;border:none;cursor:pointer;font-family:'Inter',sans-serif;font-size:1rem;font-weight:700;color:#f4ede4;text-align:left;gap:1rem;">
+        <button @click="o=!o" style="width:100%;display:flex;align-items:center;justify-content:space-between;padding:1.25rem 1.5rem;background:none;border:none;cursor:pointer;font-family:'Roboto',sans-serif;font-size:1rem;font-weight:700;color:#f4ede4;text-align:left;gap:1rem;">
           How much time does it take?
           <span style="flex-shrink:0;font-size:1.25rem;color:#c41e33;" x-text="o?'×':'+'"></span>
         </button>
@@ -528,7 +527,7 @@
         </div>
       </div>
       <div class="rv d2" x-data="{o:false}" style="border:1px solid #2e2626;border-radius:12px;overflow:hidden;">
-        <button @click="o=!o" style="width:100%;display:flex;align-items:center;justify-content:space-between;padding:1.25rem 1.5rem;background:none;border:none;cursor:pointer;font-family:'Inter',sans-serif;font-size:1rem;font-weight:700;color:#f4ede4;text-align:left;gap:1rem;">
+        <button @click="o=!o" style="width:100%;display:flex;align-items:center;justify-content:space-between;padding:1.25rem 1.5rem;background:none;border:none;cursor:pointer;font-family:'Roboto',sans-serif;font-size:1rem;font-weight:700;color:#f4ede4;text-align:left;gap:1rem;">
           Is the call just a sales pitch?
           <span style="flex-shrink:0;font-size:1.25rem;color:#c41e33;" x-text="o?'×':'+'"></span>
         </button>
@@ -537,7 +536,7 @@
         </div>
       </div>
       <div class="rv d3" x-data="{o:false}" style="border:1px solid #2e2626;border-radius:12px;overflow:hidden;">
-        <button @click="o=!o" style="width:100%;display:flex;align-items:center;justify-content:space-between;padding:1.25rem 1.5rem;background:none;border:none;cursor:pointer;font-family:'Inter',sans-serif;font-size:1rem;font-weight:700;color:#f4ede4;text-align:left;gap:1rem;">
+        <button @click="o=!o" style="width:100%;display:flex;align-items:center;justify-content:space-between;padding:1.25rem 1.5rem;background:none;border:none;cursor:pointer;font-family:'Roboto',sans-serif;font-size:1rem;font-weight:700;color:#f4ede4;text-align:left;gap:1rem;">
           I need to think about it.
           <span style="flex-shrink:0;font-size:1.25rem;color:#c41e33;" x-text="o?'×':'+'"></span>
         </button>
