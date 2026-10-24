@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Book A Free Call &middot; Mansi Panchal</title>
+  <title>Stop Pitching. Start Asking. &middot; Mansi Panchal</title>
   <meta name="robots" content="noindex" />
   <meta name="description" content="The proven 2 questions that make rich clients pick you over the other 9 agents, without lowering your prices." />
   <link rel="icon" href="../assets/img/favicon.png" type="image/png" />
@@ -288,117 +288,109 @@
   openImg(src){this.img=src;this.imgLoaded=false}
 }" x-init="$watch('img',v=>{document.body.style.overflow=v?'hidden':''})" @keydown.escape.window="if(img){img=null}else if(applyOpen){applyOpen=false}">
 
-<!-- ═══════════════ HERO ═══════════════ -->
-<section style="background:#0d0b0b;padding-top:1.25rem;padding-bottom:4rem;">
-  <div style="max-width:860px;margin:0 auto;padding:0 1.25rem;text-align:center;">
+<style>
+  .nq-cap{font-family:"SF Pro Display Bold","Inter",-apple-system,sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:-.01em;line-height:1.02;color:#f4ede4;margin:0}
+  .nq-acc{color:#ee5466;text-shadow:0 0 28px rgba(224,74,92,.45)}
+  .nq-ey{font-size:.72rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:#ee5466;margin:0 0 .75rem}
+  .nq-sec{padding:4.5rem 1.25rem;border-top:1px solid #2e2626}
+  .nq-wrap{max-width:760px;margin:0 auto}
+  .nq-h2{font-size:clamp(1.85rem,5.4vw,2.9rem);margin-bottom:2rem}
+  .nq-card{background:#1a1515;border:1px solid #2e2626;border-radius:14px;padding:1.5rem 1.375rem}
+  .nq-row{display:grid;grid-template-columns:1fr 1fr;gap:.75rem;margin-bottom:.75rem}
+  .nq-old,.nq-new{border-radius:12px;padding:1rem 1.125rem;font-size:.9375rem;line-height:1.45}
+  .nq-old{background:#141010;border:1px solid #2e2626;color:#9d9086}
+  .nq-new{background:#221c1c;border:1px solid rgba(224,74,92,.45);color:#f4ede4;font-weight:600}
+  .nq-lab{display:block;font-size:.62rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;margin-bottom:.35rem}
+  .nq-old .nq-lab{color:#7d7068}.nq-new .nq-lab{color:#ee5466}
+  .nq-stat{font-family:"SF Pro Display Bold","Inter",sans-serif;font-size:clamp(2.6rem,9vw,3.6rem);line-height:1;color:#f4ede4;letter-spacing:-.03em;margin:0 0 .5rem}
+  .nq-statl{font-size:.75rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#ee5466;margin:0 0 .875rem}
+  .nq-p{font-size:.9375rem;color:#cbbfb3;line-height:1.6;margin:0}
+  .nq-feat{display:flex;gap:1rem;align-items:flex-start}
+  .nq-ic{flex-shrink:0;width:40px;height:40px;border-radius:10px;background:#2a1418;border:1px solid rgba(196,30,51,.4);display:flex;align-items:center;justify-content:center}
+  .nq-ft{font-size:1.0625rem;font-weight:700;color:#f4ede4;margin:0 0 .3rem}
+  .nq-num{font-family:"SF Pro Display Bold","Inter",sans-serif;font-size:2.25rem;line-height:1;color:#ee5466;margin:0 0 .625rem}
+  .nq-ladder{display:grid;grid-template-columns:1fr 1fr;gap:.875rem}
+  .nq-micro{font-size:.75rem;color:#9d9086;margin:.75rem 0 0}
+  @media(max-width:640px){.nq-row{grid-template-columns:1fr;gap:.5rem;margin-bottom:1.125rem}.nq-ladder{grid-template-columns:1fr}.nq-sec{padding:3.5rem 1rem}}
+</style>
 
-    <!-- Badge -->
-    <div class="h1" style="display:inline-flex;align-items:center;gap:8px;background:#2a1418;border:1px solid rgba(196,30,51,.3);border-radius:100px;padding:6px 16px;margin-bottom:1.75rem;">
-      <span class="hero-badge-text" style="font-size:.9rem;font-weight:600;letter-spacing:0;color:#f4ede4;text-wrap:balance;">For Dubai agents selling <strong style="color:#ee5466;font-weight:800;">property, company setups or cars</strong></span>
-    </div>
-
-    <!-- H1 -->
-    <h1 class="h2 hero-h1" style="font-size:clamp(2rem,4.2vw,2.75rem);font-weight:800;letter-spacing:-.03em;line-height:1.1;color:#f4ede4;margin:0 auto 1.25rem;max-width:720px;">
-      The Proven 2 Questions That Make Rich Clients Pick You Over The Other 9 Agents.<br/>Without Lowering Your Price.
-    </h1>
-
-    <!-- Sub -->
-    <p class="h3" style="font-size:clamp(1rem,2vw,1.2rem);color:#cbbfb3;line-height:1.45;max-width:640px;margin:0 auto 2rem;">
-      I came to Dubai on AED 3,500 a month in 2019. Today I&rsquo;m CEO of FounderX, and my team closes with these 2 questions every&nbsp;week.
-    </p>
-
-    <!-- Hero video -->
-    <div id="hero-video-sticky-wrap" style="max-width:670px;margin:0 auto 2rem;">
-      <div class="sticky-vid-inner" style="border-radius:14px;overflow:hidden;box-shadow:0 24px 64px -12px rgba(0,0,0,.18);position:relative;aspect-ratio:16/9;background:#1a1515;">
-        <div id="vsl-thumb" style="position:absolute;inset:0;width:100%;height:100%;z-index:2;cursor:pointer;" @click="applyOpen=true">
+<!-- ═══════════════ HERO (NEPQ order: trust line, 2-line caps H1, video, sub, CTA) ═══════════════ -->
+<section style="background:#0d0b0b;padding:1.75rem 1.25rem 3.5rem;">
+  <div style="max-width:820px;margin:0 auto;text-align:center;">
+    <p class="nq-ey h1" style="margin-bottom:1.25rem;">Trusted by 109K followers in Dubai</p>
+    <h1 class="nq-cap h2" style="font-size:clamp(2.6rem,10vw,5rem);margin-bottom:1.25rem;">Stop Pitching.<br/><span class="nq-acc">Start Asking.</span></h1>
+    <p class="h3" style="font-size:clamp(1rem,2.4vw,1.2rem);color:#cbbfb3;line-height:1.5;max-width:600px;margin:0 auto 1.75rem;">The proven 2 questions my team uses to make rich clients pick you over the other 9 agents, at your full price.</p>
+    <div style="max-width:670px;margin:0 auto 1.75rem;">
+      <div style="border-radius:14px;overflow:hidden;box-shadow:0 24px 64px -12px rgba(0,0,0,.6);position:relative;aspect-ratio:16/9;background:#1a1515;border:1px solid #2e2626;">
+        <div id="vsl-thumb" style="position:absolute;inset:0;z-index:2;cursor:pointer;" @click="applyOpen=true">
           <img src="../assets/img/vsl-thumb.jpg?v=2" alt="Mansi Panchal" style="width:100%;height:100%;object-fit:cover;display:block;" fetchpriority="high" />
-          <div class="vsl-play-btn">
-            <svg width="54" height="54" viewBox="0 0 24 24" fill="none"><path d="M8 5v14l11-7L8 5z" fill="#fff"/></svg>
-          </div>
+          <div class="vsl-play-btn"><svg width="54" height="54" viewBox="0 0 24 24" fill="none"><path d="M8 5v14l11-7L8 5z" fill="#fff"/></svg></div>
         </div>
       </div>
     </div>
-
-    <!-- CTA -->
-    <div style="margin-bottom:.75rem;">
-      <button class="btn btn-gold" @click="applyOpen=true">
-        Book My Free Call
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </button>
-    </div>
-    <div style="display:inline-flex;align-items:center;gap:.5rem;background:#2a1418;border:1px solid rgba(196,30,51,.35);border-radius:100px;padding:7px 18px;margin-top:.875rem;">
-      <svg width="14" height="16" viewBox="0 0 14 16" fill="none"><path d="M7 1L1.5 3.5v4.25C1.5 11.19 3.88 13.93 7 15c3.12-1.07 5.5-3.81 5.5-7.25V3.5L7 1z" stroke="#c41e33" stroke-width="1.5" stroke-linejoin="round"/><path d="M4.5 8l1.75 1.75L9.5 6" stroke="#c41e33" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      <span class="hero-guar" style="font-size:.875rem;font-weight:700;color:#f4ede4;"><span class="gb">No Discounts Needed</span> <span class="gb">+ Property, Setups &amp; Cars</span></span>
-    </div>
-
-    <!-- What you get on the call -->
-    <div style="margin:1.75rem auto 0;max-width:460px;text-align:left;">
-      <p style="font-size:.75rem;font-weight:700;color:#9d9086;text-transform:uppercase;letter-spacing:.12em;margin:0 0 .75rem;text-align:center;">On this call we&rsquo;ll:</p>
-      <div style="display:flex;flex-direction:column;gap:.5rem;">
-        <div style="display:flex;align-items:flex-start;gap:.625rem;">
-          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" style="flex-shrink:0;margin-top:3px;"><path d="M1 7l4 4L13 3" stroke="#c41e33" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          <span style="font-size:.875rem;color:#cbbfb3;line-height:1.5;">Find where your deals get stuck: after the details, after the price, or on the call</span>
-        </div>
-        <div style="display:flex;align-items:flex-start;gap:.625rem;">
-          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" style="flex-shrink:0;margin-top:3px;"><path d="M1 7l4 4L13 3" stroke="#c41e33" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          <span style="font-size:.875rem;color:#cbbfb3;line-height:1.5;">Show you the 2 questions on your real deals</span>
-        </div>
-        <div style="display:flex;align-items:flex-start;gap:.625rem;">
-          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" style="flex-shrink:0;margin-top:3px;"><path d="M1 7l4 4L13 3" stroke="#c41e33" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          <span style="font-size:.875rem;color:#cbbfb3;line-height:1.5;">Tell you honestly if The Closing Room can help. If it can&rsquo;t, my team will say so</span>
-        </div>
-      </div>
-    </div>
-
-    <!-- Social proof strip -->
-    <div class="proof-strip" style="display:flex;align-items:center;justify-content:center;gap:1.5rem;flex-wrap:wrap;margin-top:2rem;padding-top:1.75rem;border-top:1px solid #2e2626;">
-      <div style="text-align:center;flex-shrink:0;">
-        <div class="proof-num" style="font-size:1.25rem;font-weight:800;color:#f4ede4;letter-spacing:-.02em;">109K</div>
-        <div class="proof-lbl" style="font-size:.7rem;font-weight:600;color:#9d9086;text-transform:uppercase;letter-spacing:.1em;margin-top:1px;">Followers</div>
-      </div>
-      <div class="proof-div" style="width:1px;height:32px;background:#2e2626;flex-shrink:0;"></div>
-      <div style="text-align:center;flex-shrink:0;">
-        <div class="proof-num" style="font-size:1.25rem;font-weight:800;color:#f4ede4;letter-spacing:-.02em;">3M</div>
-        <div class="proof-lbl" style="font-size:.7rem;font-weight:600;color:#9d9086;text-transform:uppercase;letter-spacing:.1em;margin-top:1px;">Reel Plays</div>
-      </div>
-      <div class="proof-div" style="width:1px;height:32px;background:#2e2626;flex-shrink:0;"></div>
-      <div style="text-align:center;flex-shrink:0;">
-        <div class="proof-num" style="font-size:1.25rem;font-weight:800;color:#f4ede4;letter-spacing:-.02em;">AED 3,500</div>
-        <div class="proof-lbl" style="font-size:.7rem;font-weight:600;color:#9d9086;text-transform:uppercase;letter-spacing:.1em;margin-top:1px;">My Start, 2019</div>
-      </div>
-    </div>
-
+    <p style="font-size:1rem;color:#f4ede4;font-weight:600;max-width:560px;margin:0 auto 1.25rem;line-height:1.5;">I came to Dubai on AED 3,500 a month in 2019. Today I&rsquo;m CEO of FounderX. This is how my team sells.</p>
+    <button class="btn btn-gold" @click="applyOpen=true">Book My Free Call <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+    <p class="nq-micro">Free call &middot; No discounts needed &middot; Property, setups &amp; cars</p>
   </div>
 </section>
 
-<!-- ═══ PROMISE STRIP ═══ -->
-<section style="background:#141010;padding:2rem 1.25rem;border-bottom:1px solid #2e2626;">
-  <div style="max-width:680px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:1rem;">
-    <div style="background:#1a1515;border:1px solid #2e2626;border-radius:12px;padding:1.25rem;text-align:center;">
-      <p style="font-size:.65rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#c41e33;margin:0 0 .375rem;">What you keep</p>
-      <p style="font-size:.9375rem;font-weight:800;color:#f4ede4;margin:0 0 .3rem;line-height:1.25;">Your Full Price</p>
-      <p style="font-size:.8rem;color:#cbbfb3;line-height:1.5;margin:0;">The 2 questions show the client what they&rsquo;re really comparing, so you stop discounting.</p>
+<!-- ═══════════════ OLD WAY VS NEW WAY ═══════════════ -->
+<section class="nq-sec" style="background:#141010;">
+  <div class="nq-wrap">
+    <p class="nq-ey rv" style="text-align:center;">The old way is broken</p>
+    <h2 class="nq-cap nq-h2 rv" style="text-align:center;">Everything You Were Taught <span class="nq-acc">About Selling Is Wrong</span></h2>
+    <div class="rv">
+      <div class="nq-row"><div class="nq-old"><span class="nq-lab">What most agents do</span>Send the brochure, the floor plan and the price</div><div class="nq-new"><span class="nq-lab">What my team does</span>Ask why they want to buy before showing anything</div></div>
+      <div class="nq-row"><div class="nq-old"><span class="nq-lab">What most agents do</span>Talk for 20 minutes about features</div><div class="nq-new"><span class="nq-lab">What my team does</span>Ask 2 questions and let the client talk</div></div>
+      <div class="nq-row"><div class="nq-old"><span class="nq-lab">What most agents do</span>Drop the price when the client compares</div><div class="nq-new"><span class="nq-lab">What my team does</span>Show the client what they&rsquo;re really comparing</div></div>
+      <div class="nq-row"><div class="nq-old"><span class="nq-lab">What most agents do</span>&ldquo;Just checking in&rdquo; for 3 weeks</div><div class="nq-new"><span class="nq-lab">What my team does</span>Follow up on the reason the client gave you</div></div>
     </div>
-    <div style="background:#1a1515;border:1px solid #2e2626;border-radius:12px;padding:1.25rem;text-align:center;">
-      <p style="font-size:.65rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#c41e33;margin:0 0 .375rem;">Your words</p>
-      <p style="font-size:.9375rem;font-weight:800;color:#f4ede4;margin:0 0 .3rem;line-height:1.25;">A Script For What You Sell</p>
-      <p style="font-size:.8rem;color:#cbbfb3;line-height:1.5;margin:0;">My team writes your opening, your 2 questions and your follow-ups.</p>
+    <div class="rv" style="text-align:center;margin-top:2rem;">
+      <button class="btn btn-gold" @click="applyOpen=true">Book My Free Call <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
     </div>
   </div>
 </section>
 
-<!-- ═══════════════ RESULTS SECTION ═══════════════ -->
-<section style="background:#0d0b0b;padding:2.5rem 1.25rem 5rem;">
+<!-- ═══════════════ STATS ═══════════════ -->
+<section class="nq-sec" style="background:#0d0b0b;">
+  <div class="nq-wrap">
+    <p class="nq-ey rv">The numbers are real</p>
+    <h2 class="nq-cap nq-h2 rv">Results That Speak<br/><span class="nq-acc">Louder Than Promises</span></h2>
+    <div style="display:flex;flex-direction:column;gap:1rem;">
+      <div class="nq-card rv"><p class="nq-stat">AED 3,500</p><p class="nq-statl">My salary in 2019</p><p class="nq-p">I landed in Dubai with no contacts and nobody who knew my name. Today I&rsquo;m CEO of FounderX.</p></div>
+      <div class="nq-card rv"><p class="nq-stat">109K</p><p class="nq-statl">People follow how I sell</p><p class="nq-p">Agents, founders and sales teams watch my Reels to learn what to say to rich clients. My Reels have 3M+ plays.</p></div>
+      <div class="nq-card rv"><p class="nq-stat">2025</p><p class="nq-statl">Featured in Gulf Business</p><p class="nq-p">My team uses the same 2 questions on Dubai company setups every week.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ WHAT YOU GET ═══════════════ -->
+<section class="nq-sec" style="background:#141010;">
+  <div class="nq-wrap">
+    <p class="nq-ey rv">On your free call</p>
+    <h2 class="nq-cap nq-h2 rv">What You&rsquo;re <span class="nq-acc">Getting</span></h2>
+    <div class="nq-card rv" style="display:flex;flex-direction:column;gap:1.5rem;">
+      <div class="nq-feat"><div class="nq-ic"><svg width="18" height="18" viewBox="0 0 14 14" fill="none"><path d="M1 7l4 4L13 3" stroke="#ee5466" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div><p class="nq-ft">Where your deals get stuck</p><p class="nq-p">After the details, after the price, or on the call. We find the exact spot.</p></div></div>
+      <div class="nq-feat"><div class="nq-ic"><svg width="18" height="18" viewBox="0 0 14 14" fill="none"><path d="M1 7l4 4L13 3" stroke="#ee5466" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div><p class="nq-ft">The 2 questions, on your real deals</p><p class="nq-p">Bring a client you lost. We show you what to ask them instead.</p></div></div>
+      <div class="nq-feat"><div class="nq-ic"><svg width="18" height="18" viewBox="0 0 14 14" fill="none"><path d="M1 7l4 4L13 3" stroke="#ee5466" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div><p class="nq-ft">What to say when they compare</p><p class="nq-p">The words my team uses when a client says another agent is cheaper.</p></div></div>
+      <div class="nq-feat"><div class="nq-ic"><svg width="18" height="18" viewBox="0 0 14 14" fill="none"><path d="M1 7l4 4L13 3" stroke="#ee5466" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div><p class="nq-ft">Follow-ups that get replies</p><p class="nq-p">No more &ldquo;just checking in&rdquo;. You follow up on what the client told you.</p></div></div>
+      <div class="nq-feat"><div class="nq-ic"><svg width="18" height="18" viewBox="0 0 14 14" fill="none"><path d="M1 7l4 4L13 3" stroke="#ee5466" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div><p class="nq-ft">An honest answer</p><p class="nq-p">If The Closing Room can&rsquo;t help you, my team will say so on the call.</p></div></div>
+    </div>
+    <div class="rv" style="text-align:center;margin-top:2rem;">
+      <button class="btn btn-gold" @click="applyOpen=true">Book My Free Call <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      <p class="nq-micro">Takes 2 minutes to apply</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ REVIEWS ═══════════════ -->
+<section class="nq-sec" style="background:#0d0b0b;">
   <div style="max-width:1200px;margin:0 auto;">
-
-    <!-- Section header -->
-    <div class="rv" style="text-align:center;margin-bottom:3rem;">
-      <p class="ey" style="margin-bottom:.5rem;">Real Results</p>
-      <h2 style="font-size:clamp(1.75rem,4vw,2.75rem);font-weight:800;letter-spacing:-.025em;color:#f4ede4;margin-bottom:1rem;">The Team I Train, <br class="mob-br"/>In Our Clients&rsquo; Words</h2>
-      <p style="font-size:1.0625rem;color:#cbbfb3;max-width:580px;margin:0 auto;">Manraj, Hussain, Thiri and Francis are on my FounderX team. These are real 5-star reviews from our clients.</p>
+    <div class="rv" style="text-align:center;margin-bottom:2.5rem;">
+      <p class="nq-ey">5-star reviews</p>
+      <h2 class="nq-cap nq-h2" style="margin-bottom:1rem;">Reviews From <span class="nq-acc">Our Clients</span></h2>
+      <p class="nq-p" style="max-width:560px;margin:0 auto;">Manraj, Hussain, Thiri and Francis are on my FounderX team. These are real 5-star reviews from our clients.</p>
     </div>
-
-    <!-- ── CASE STUDY CARDS ── -->
     <div class="cs-grid" style="margin-bottom:3rem;">
 
       <div class="cs-card" style="background:#1a1515;border-radius:14px;border:1px solid rgba(250,244,238,.07);border-top:3px solid #c41e33;padding:1.5rem 1.25rem;transition:transform .2s;" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform='none'">
@@ -450,83 +442,43 @@
         <p style="font-size:.8125rem;color:rgba(250,244,238,.72);line-height:1.6;margin:0;">&ldquo;I got my Dubai business visa set up in under 2 weeks with no hassle and a seamless experience. Lovely collaboration with Manraj and Francis!&rdquo;</p>
       </div>
     </div>
-
-    <!-- ── WALL OF PROOF ── -->
-    <div class="rv d2" style="margin-bottom:2rem;max-width:900px;margin-left:auto;margin-right:auto;">
-      <div class="slack-grid">
-        <img class="slack-win" src="../assets/img/proof/p6.jpg" alt="Mansi in Dubai" @click="openImg('../assets/img/proof/p6.jpg')" style="cursor:pointer;" loading="lazy" />
-        <img class="slack-win" src="../assets/img/proof/p1.jpg" alt="Mansi in Dubai" @click="openImg('../assets/img/proof/p1.jpg')" style="cursor:pointer;" loading="lazy" />
-        <img class="slack-win" src="../assets/img/proof/p8.jpg" alt="Mansi in Dubai" @click="openImg('../assets/img/proof/p8.jpg')" style="cursor:pointer;" loading="lazy" />
-        <img class="slack-win" src="../assets/img/proof/p3.jpg" alt="Mansi in Dubai" @click="openImg('../assets/img/proof/p3.jpg')" style="cursor:pointer;" loading="lazy" />
-        <img class="slack-win" src="../assets/img/proof/p7.jpg" alt="Mansi in Dubai" @click="openImg('../assets/img/proof/p7.jpg')" style="cursor:pointer;" loading="lazy" />
-        <img class="slack-win" src="../assets/img/proof/p4.jpg" alt="Mansi in Dubai" @click="openImg('../assets/img/proof/p4.jpg')" style="cursor:pointer;" loading="lazy" />
-      </div>
-    </div>
-
-    <!-- Want to see more -->
-    <div class="rv d2" style="text-align:center;margin-bottom:3rem;">
-      <div style="display:inline-block;border:1px solid #2e2626;border-radius:12px;padding:1.125rem 1.5rem;max-width:400px;width:100%;text-align:center;">
-        <p style="font-size:.75rem;font-weight:700;color:#9d9086;text-transform:uppercase;letter-spacing:.1em;margin:0 0 .625rem;">Want to see more?</p>
-        <div style="display:flex;flex-direction:column;gap:.35rem;margin-bottom:.75rem;text-align:left;display:inline-flex;">
-          <div style="display:flex;align-items:center;gap:.5rem;"><svg width="11" height="11" viewBox="0 0 14 14" fill="none"><path d="M1 7l4 4L13 3" stroke="#c41e33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span style="font-size:.8125rem;color:#cbbfb3;">New sales tips every week</span></div>
-          <div style="display:flex;align-items:center;gap:.5rem;"><svg width="11" height="11" viewBox="0 0 14 14" fill="none"><path d="M1 7l4 4L13 3" stroke="#c41e33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span style="font-size:.8125rem;color:#cbbfb3;">Saved in my &ldquo;Sales struggles&rdquo; highlight</span></div>
-        </div>
-        <div><a href="https://www.instagram.com/mansiinsights/" target="_blank" rel="noopener" style="font-size:.8125rem;font-weight:700;color:#c41e33;text-decoration:underline;font-family:'Inter',sans-serif;">Follow @mansiinsights &rarr;</a></div>
-      </div>
-    </div>
-
-    <!-- CTA -->
-    <div class="rv" style="text-align:center;">
-      <button class="btn btn-gold" @click="applyOpen=true">
-        Book My Free Call
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </button>
-      <div style="display:flex;align-items:center;justify-content:center;gap:.4rem;margin-top:.6rem;">
-        <svg width="14" height="16" viewBox="0 0 14 16" fill="none"><path d="M7 1L1.5 3.5v4.25C1.5 11.19 3.88 13.93 7 15c3.12-1.07 5.5-3.81 5.5-7.25V3.5L7 1z" stroke="#c41e33" stroke-width="1.5" stroke-linejoin="round"/><path d="M4.5 8l1.75 1.75L9.5 6" stroke="#c41e33" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        <span style="font-size:.7rem;font-weight:600;color:#9d9086;"><span class="gb">No Discounts Needed</span> <span class="gb">+ Property, Setups &amp; Cars</span></span>
-      </div>
-    </div>
-
   </div>
+</section>
 
+<!-- ═══════════════ LADDER ═══════════════ -->
+<section class="nq-sec" style="background:#141010;">
+  <div class="nq-wrap">
+    <p class="nq-ey rv">What happens next</p>
+    <h2 class="nq-cap nq-h2 rv">The Call Is Just <span class="nq-acc">The Beginning</span></h2>
+    <div class="nq-ladder">
+      <div class="nq-card rv"><p class="nq-num">01</p><p class="nq-ft">Apply</p><p class="nq-p">Answer a few quick questions about what you sell.</p></div>
+      <div class="nq-card rv"><p class="nq-num">02</p><p class="nq-ft">Free call</p><p class="nq-p">We find where your deals get stuck.</p></div>
+      <div class="nq-card rv"><p class="nq-num">03</p><p class="nq-ft">Your script</p><p class="nq-p">My team writes your opening, your 2 questions and your follow-ups.</p></div>
+      <div class="nq-card rv"><p class="nq-num">04</p><p class="nq-ft">Your next client</p><p class="nq-p">You use them on your next rich client, at your full price.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ RISK REVERSAL ═══════════════ -->
+<section class="nq-sec" style="background:#0d0b0b;">
+  <div class="nq-wrap rv" style="text-align:center;">
+    <div style="width:72px;height:72px;border-radius:50%;background:#2a1418;border:1px solid rgba(196,30,51,.5);display:flex;align-items:center;justify-content:center;margin:0 auto 1.5rem;">
+      <svg width="30" height="34" viewBox="0 0 14 16" fill="none"><path d="M7 1L1.5 3.5v4.25C1.5 11.19 3.88 13.93 7 15c3.12-1.07 5.5-3.81 5.5-7.25V3.5L7 1z" stroke="#ee5466" stroke-width="1.2" stroke-linejoin="round"/><path d="M4.5 8l1.75 1.75L9.5 6" stroke="#ee5466" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </div>
+    <h2 class="nq-cap nq-h2">The Call Is Free.<br/><span class="nq-acc">The Risk Is On Us.</span></h2>
+    <p class="nq-p" style="max-width:560px;margin:0 auto 2rem;font-size:1.0625rem;">You leave knowing exactly where you lose rich clients, even if you never work with us. If we can&rsquo;t help, my team will tell you on the call.</p>
+    <button class="btn btn-gold" @click="applyOpen=true">Book My Free Call <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+    <p class="nq-micro">No discounts needed &middot; Property, setups &amp; cars</p>
+  </div>
   <!-- IMAGE LIGHTBOX -->
   <div x-show="img" x-cloak @click.self="img=null" class="lb-wrap" style="z-index:600;">
     <div style="position:relative;max-width:520px;width:100%;">
       <button class="lb-close" @click="img=null"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1 1l12 12M13 1L1 13" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/></svg></button>
       <img :src="img" @load="imgLoaded=true" style="width:100%;border-radius:12px;display:block;" />
-      <div x-show="!imgLoaded" style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;"><div class="lb-spinner"></div></div>
     </div>
-  </div>
-
-</section><!-- /results section -->
-
-<!-- ═══════════════ NO-EXPERIENCE SECTION ═══════════════ -->
-<section style="background:#141010;padding:5rem 1.25rem;">
-  <div class="rv" style="max-width:640px;margin:0 auto;text-align:center;">
-    <div style="width:72px;height:72px;border-radius:50%;background:#c41e33;display:flex;align-items:center;justify-content:center;margin:0 auto 1.5rem;">
-      <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M6 16l7 8L26 8" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-    </div>
-    <h2 style="font-size:clamp(1.75rem,4vw,2.75rem);font-weight:800;letter-spacing:-.025em;color:#f4ede4;margin-bottom:1.25rem;">No Big Pitch Needed.</h2>
-    <p style="font-size:1.0625rem;color:#cbbfb3;line-height:1.7;margin-bottom:1.75rem;">I started on AED 3,500 a month with no contacts and nobody who knew my name. The 2 questions work because you talk less, not more. Rich clients have heard every pitch. They haven&rsquo;t heard good questions.</p>
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;max-width:560px;margin:0 auto 2rem;text-align:left;">
-      <div style="background:#1a1515;border-radius:12px;padding:1.25rem;">
-        <p style="font-size:.65rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#c41e33;margin:0 0 .5rem;">What you won&rsquo;t do</p>
-        <p style="font-size:.9375rem;font-weight:800;color:#f4ede4;margin:0 0 .4rem;line-height:1.3;">No Discounts. No Chasing.</p>
-        <p style="font-size:.8125rem;color:#cbbfb3;line-height:1.55;margin:0;">You stop dropping the price and stop sending &ldquo;just checking in&rdquo;.</p>
-      </div>
-      <div style="background:#1a1515;border-radius:12px;padding:1.25rem;">
-        <p style="font-size:.65rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#c41e33;margin:0 0 .5rem;">What you keep</p>
-        <p style="font-size:.9375rem;font-weight:800;color:#f4ede4;margin:0 0 .4rem;line-height:1.3;">Your Price. Your Calm.</p>
-        <p style="font-size:.8125rem;color:#cbbfb3;line-height:1.55;margin:0;">Rich clients pick the agent who sounded calm and asked better questions.</p>
-      </div>
-    </div>
-    <button class="btn btn-dark" @click="applyOpen=true">
-      Book My Free Call
-      <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-    </button>
-    <p style="font-size:.75rem;color:#9d9086;line-height:1.5;margin:1rem auto 0;max-width:300px;">Results shown aren&rsquo;t typical.<br/>We go through everything on your call.</p>
   </div>
 </section>
+
 
 <!-- ═══════════════ FAQ SECTION ═══════════════ -->
 <section style="background:#0d0b0b;padding:5rem 1.25rem;">

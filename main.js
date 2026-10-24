@@ -340,7 +340,7 @@
     var host = location.hostname || "localhost";
     var src = CAL_URL + "?embed_domain=" + encodeURIComponent(host) +
       "&embed_type=Inline&hide_gdpr_banner=1" +
-      "&background_color=ffffff&text_color=16130f&primary_color=1e4d3d";
+      "&background_color=ffffff&text_color=16130f&primary_color=c41e33";
     var iframe = document.createElement("iframe");
     iframe.title = "Book a discovery call";
     iframe.loading = "eager";
@@ -370,7 +370,7 @@
   var calInline = document.getElementById("cal-inline");
   if (calInline) {
     var host = location.hostname || "localhost";
-    var inlineSrc = (CFG.calendly || CAL_URL) + "?embed_domain=" + encodeURIComponent(host) + "&embed_type=Inline&hide_gdpr_banner=1&background_color=ffffff&text_color=16130f&primary_color=1e4d3d";
+    var inlineSrc = (CFG.calendly || CAL_URL) + "?embed_domain=" + encodeURIComponent(host) + "&embed_type=Inline&hide_gdpr_banner=1&background_color=ffffff&text_color=16130f&primary_color=c41e33";
     var inl = document.createElement("iframe");
     inl.title = "Book a call"; inl.loading = "lazy"; inl.setAttribute("frameborder", "0"); inl.src = inlineSrc;
     calInline.appendChild(inl);
